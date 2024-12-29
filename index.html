@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetYourStay - Find a Perfect Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <!-- <a href="index.html"> -->
+          <img
+            src="/Utils/logo.png"
+            alt="GetYourStay Logo"
+            aria-label="GetYourStay Logo"
+          />
+          <a href="index.html"><span>GetYourStay</span></a>
+          <!-- <span>GetYourStay</span> -->
+          <!-- </a> -->
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="active" aria-label="Home">Home</a>
+            </li>
+            <li>
+              <a href="login.html" id="login-link" aria-label="Login">Login</a>
+            </li>
+            <li>
+              <a
+                href="/all-accommodation/all-accommodations.html"
+                aria-label="Accommodation"
+                >Accommodation</a
+              >
+            </li>
+            <li><a href="about.html" aria-label="About">About</a></li>
+            <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            <li>
+              <a href="#" class="cta" aria-label="Add PG or Room"
+                >Add PG/ROOM</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Find A <span class="highlight">Perfect Home</span> To Live</h1>
+            <p>
+              Find your perfect <span><b>STAY</b></span> without the hassle of
+              brokerage. Say goodbye to shady middlemen and hello to hassle-free
+              living.
+            </p>
+            <a
+              href="login.html"
+              id="login-link"
+              class="cta-button"
+              aria-label="Get Started"
+              >Get Started</a
+            >
+          </div>
+          <div class="hero-image">
+            <img
+              id="hero-image"
+              src="/Utils/AdobeStock_850106558_Preview.jpeg"
+              alt="Home Image"
+              aria-label="Hero Image of a Home"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section class="search">
+        <div class="container search-box">
+          <select
+            class="dropdown"
+            id="price-range"
+            aria-label="Select Price Range"
+          >
+            <option value="">Price Range</option>
+            <option value="1-1000">0-1000</option>
+            <option value="1000-5000">1000-5000</option>
+            <option value="5000-10000">5000-10000</option>
+            <option value="10000-20000">10000-20000</option>
+            <option value="20000-30000">20000-30000</option>
+            <option value="30000-40000">30000-40000</option>
+            <option value="40000-50000">40000-50000</option>
+            <option value="50000-above">50000-above</option>
+          </select>
+          <select
+            class="dropdown"
+            id="accommodation-type"
+            aria-label="Select Accommodation Type"
+          >
+            <option value="">Accommodation Type</option>
+            <option value="pg">PG</option>
+            <option value="hostel">Hostel</option>
+            <option value="room">Room</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Townhouse">Townhouse</option>
+            <option value="Villa">Villa</option>
+            <option value="Plot">Plot</option>
+            <option value="Land">Land</option>
+            <option value="Office">Office</option>
+            <option value="Building">Building</option>
+            <option value="Shop">Shopping Mall / Plaza</option>
+            <option value="Garage">Garage</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Location or Accommodation Name"
+            id="search-query"
+            aria-label="Search Location or Accommodation Name"
+          />
+          <button type="button" id="search-button" aria-label="Search">
+            Search
+          </button>
+        </div>
+      </section>
+
+      <!-- Property Types Section -->
+      <section class="property-types-section">
+        <div class="property-types-header">
+          <h2>We've Got Properties for Everyone</h2>
+          <p>
+            Explore our diverse range of property types to find your perfect
+            match.
+          </p>
+        </div>
+
+        <div class="property-types-grid">
+          <!-- Owner Properties Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Owner Properties"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Owner Properties</h3>
+              <p class="property-card-description">
+                Browse properties directly from owners for a more transparent
+                and direct transaction.
+              </p>
+              <a
+                href="/Property-Types-Section/owner-properties.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Projects Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Projects"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Projects</h3>
+              <p class="property-card-description">
+                Discover new real estate projects that are under development and
+                ready to move into soon.
+              </p>
+              <a
+                href="/Property-Types-Section/projects.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Ready-to-Move Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Ready to Move-In"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Ready to Move-In</h3>
+              <p class="property-card-description">
+                Find fully furnished, ready-to-move-in properties that are
+                available right now.
+              </p>
+              <a
+                href="/Property-Types-Section/ready-to-move.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Budget Homes Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Budget Homes"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Budget Homes</h3>
+              <p class="property-card-description">
+                Explore affordable homes that fit within your budget without
+                compromising on quality.
+              </p>
+              <a
+                href="/Property-Types-Section/budget-homes.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Luxury Properties Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Luxury Properties"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Luxury Properties</h3>
+              <p class="property-card-description">
+                Indulge in the finest living with our premium collection of
+                luxury properties.
+              </p>
+              <a
+                href="/Property-Types-Section/luxury-properties.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Commercial Spaces Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Commercial Spaces"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Commercial Spaces</h3>
+              <p class="property-card-description">
+                Find the perfect commercial spaces, including offices and retail
+                properties.
+              </p>
+              <a
+                href="/Property-Types-Section/commercial-spaces.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Villas Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Villas"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Villas</h3>
+              <p class="property-card-description">
+                Discover our exclusive selection of luxurious and spacious
+                villas for premium living.
+              </p>
+              <a
+                href="/Property-Types-Section/villas.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Apartments Card -->
+          <div class="property-card">
+            <img
+              src="/Utils/AdobeStock_725692398_Preview.jpeg"
+              alt="Apartments"
+              class="property-card-image"
+            />
+            <div class="property-card-content">
+              <h3 class="property-card-title">Apartments</h3>
+              <p class="property-card-description">
+                Explore a wide variety of apartments that suit your needs and
+                lifestyle.
+              </p>
+              <a
+                href="/Property-Types-Section/apartments.html"
+                class="property-card-button"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accommodation Types Section -->
+      <section id="accommodation-cards" class="accommodation-types">
+        <h2>Accommodation Types</h2>
+        <p>
+          Choose your Accommodation type today and live like you are in home.
+        </p>
+        <div class="accommodation-grid">
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/apartment.html"
+              aria-label="View Apartments"
+            >
+              <h3>Apartment →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/villa.html"
+              aria-label="View Villas"
+            >
+              <h3>Villa →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/home.html"
+              aria-label="View Homes"
+            >
+              <h3>Home →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/office.html"
+              aria-label="View Offices"
+            >
+              <h3>Office →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/building.html"
+              aria-label="View Buildings"
+            >
+              <h3>Building →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/townhouse.html"
+              aria-label="View Townhouses"
+            >
+              <h3>Townhouse →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/shop.html"
+              aria-label="View Shops"
+            >
+              <h3>Shop →</h3>
+            </a>
+          </div>
+          <div
+            class="accommodation-item"
+            style="
+              background-image: url('/Utils/AdobeStock_754263337_Preview.jpeg');
+            "
+          >
+            <a
+              href="/Accommodation-Types-Section/garage.html"
+              aria-label="View Garages"
+            >
+              <h3>Garage →</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accommodation Cards Section -->
+      <section class="accommodation-card-section">
+        <h2>Find Your Perfect Accommodation</h2>
+        <p>
+          Explore a variety of accommodation options to suit your needs and
+          preferences, from crazy rooms to luxury villas. Whether you're looking
+          for a budget-friendly PG or a modern apartment,we have something for
+          everyone.
+        </p>
+
+        <div class="accommodation-cards">
+          <div class="card">
+            <img
+              src="/Utils/AdobeStock_568107719_Preview.jpeg"
+              alt="Accommodation Image 1"
+              class="card-image"
+              aria-label="Accommodation Image 1"
+            />
+            <div class="card-content">
+              <h3>PG in Jayanagar, Bangalore</h3>
+              <p>
+                Spacious, well-maintained PG located in the heart of Jayanagar.
+              </p>
+              <p>Location: Jayanagar, Bangalore</p>
+              <p>Price: ₹10,000/month</p>
+              <a
+                href="/all-accommodation/pg-jayanagar-bangalore.html"
+                class="card-button"
+                aria-label="View Details of PG in Jayanagar, Bangalore"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/Utils/AdobeStock_568107719_Preview.jpeg"
+              alt="Accommodation Image 2"
+              class="card-image"
+              aria-label="Accommodation Image 2"
+            />
+            <div class="card-content">
+              <h3>Hostel in Indiranagar, Bangalore</h3>
+              <p>
+                Comfortable hostel with all amenities in the trendy Indiranagar
+                area.
+              </p>
+              <p>Location: Indiranagar, Bangalore</p>
+              <p>Price: ₹8,000/month</p>
+              <a
+                href="/all-accommodation/hostel-indiranagar-bangalore.html"
+                class="card-button"
+                aria-label="View Details of Hostel in Indiranagar, Bangalore"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/Utils/AdobeStock_568107719_Preview.jpeg"
+              alt="Accommodation Image 3"
+              class="card-image"
+              aria-label="Accommodation Image 3"
+            />
+            <div class="card-content">
+              <h3>Room in Whitefield, Bangalore</h3>
+              <p>
+                Cozy room in a shared apartment, perfect for tech professionals.
+              </p>
+              <p>Location: Whitefield, Bangalore</p>
+              <p>Price: ₹12,000/month</p>
+              <a
+                href="/all-accommodation/room-whitefield-bangalore.html"
+                class="card-button"
+                aria-label="View Details of Room in Whitefield, Bangalore"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/Utils/AdobeStock_568107719_Preview.jpeg"
+              alt="Accommodation Image 4"
+              class="card-image"
+              aria-label="Accommodation Image 4"
+            />
+            <div class="card-content">
+              <h3>Apartment in Koramangala, Bangalore</h3>
+              <p>Modern 2 BHK apartment in the bustling area of Koramangala.</p>
+              <p>Location: Koramangala, Bangalore</p>
+              <p>Price: ₹25,000/month</p>
+              <a
+                href="/all-accommodation/apartment-koramangala-bangalore.html"
+                class="card-button"
+                aria-label="View Details of Apartment in Koramangala, Bangalore"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/Utils/AdobeStock_568107719_Preview.jpeg"
+              alt="Accommodation Image 5"
+              class="card-image"
+              aria-label="Accommodation Image 5"
+            />
+            <div class="card-content">
+              <h3>Studio Apartment in HSR Layout, Bangalore</h3>
+              <p>Compact studio apartment, perfect for singles or couples.</p>
+              <p>Location: HSR Layout, Bangalore</p>
+              <p>Price: ₹15,000/month</p>
+              <a
+                href="/all-accommodation/Studio-Apartment-HSR-Layout-Bangalore.html"
+                class="card-button"
+                aria-label="View Details of Studio Apartment in HSR Layout, Bangalore"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/Utils/AdobeStock_568107719_Preview.jpeg"
+              alt="Accommodation Image 6"
+              class="card-image"
+              aria-label="Accommodation Image 6"
+            />
+            <div class="card-content">
+              <h3>Luxury Villa in Whitefield, Bangalore</h3>
+              <p>Exclusive luxury villa with a private garden and pool.</p>
+              <p>Location: Whitefield, Bangalore</p>
+              <p>Price: ₹1,50,000/month</p>
+              <a
+                href="/all-accommodation/Luxury-Villa-Whitefield-Bangalore.html"
+                class="card-button"
+                aria-label="View Details of Luxury Villa in Whitefield, Bangalore"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-accommodations">
+          <a
+            href="/all-accommodation/all-accommodations.html"
+            class="view-all-button"
+            >View All Accommodations</a
+          >
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+              Welcome to GetYourStay! We are dedicated to helping you find the
+              perfect home without the hassle of brokerage. Our platform offers
+              a wide range of accommodation options including PGs, hostels,
+              rooms, apartments, and more. We strive to provide a seamless
+              experience, connecting you directly with property owners and
+              ensuring a hassle-free process.
+            </p>
+            <p>
+              Our mission is to simplify the process of finding a home by
+              eliminating middlemen and providing a transparent, user-friendly
+              platform. Whether you are looking for a budget-friendly PG or a
+              luxurious villa, we have something for everyone. Explore our
+              diverse range of properties and find your perfect match today!
+            </p>
+            <p>
+              For more information, feel free to
+              <a href="contact.html">contact us</a>. We are here to help you
+              every step of the way.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or feedback, feel free to reach out to us.
+          We're here to help!
+        </p>
+        <div class="container">
+          <form action="#" method="POST" aria-label="Contact Form">
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                aria-label="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                aria-label="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                aria-label="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" aria-label="Submit Contact Form">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            At GetYourStay, we strive to make your search for the perfect home
+            as easy and hassle-free as possible. Our mission is to connect you
+            with the best accommodation options without the need for a
+            brokerage.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>
+            Email:
+            <a href="mailto:info@GetYourStay.com">info@GetYourStay.com</a>
+          </p>
+          <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon" aria-label="Facebook"
+            ><img src="/Utils/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="#" class="social-icon" aria-label="Twitter"
+            ><img src="/Utils/twitter-icon.jpeg" alt="Twitter"
+          /></a>
+          <a href="#" class="social-icon" aria-label="Instagram"
+            ><img src="/Utils/instagram-icon.jpeg" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 GetYourStay. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

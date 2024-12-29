@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetYourStay - All Accommodations</title>
+    <link rel="stylesheet" href="all-accomodation.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/Utils/logo.png" alt="GetYourStay Logo" aria-label="GetYourStay Logo">
+                <span>GetYourStay</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" class="active" aria-label="Home">Home</a></li>
+                    <li><a href="/login.html" id="login-link" aria-label="Login">Login</a></li>
+                    <li><a href="/all-accommodation/all-accommodations.html"
+                            aria-label="Accommodation">Accommodation</a></li>
+                    <li><a href="/about.html" aria-label="About">About</a></li>
+                    <li><a href="/contact.html" aria-label="Contact">Contact</a></li>
+                    <li><a href="#" class="cta" aria-label="Add PG or Room">Add PG/ROOM</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search">
+        <div class="container search-box">
+            <select class="dropdown" id="price-range" aria-label="Select Price Range">
+                <option value="">Price Range</option>
+                <option value="1-1000">0-1000</option>
+                <option value="1000-5000">1000-5000</option>
+                <option value="5000-10000">5000-10000</option>
+                <option value="10000-20000">10000-20000</option>
+                <option value="20000-30000">20000-30000</option>
+                <option value="30000-40000">30000-40000</option>
+                <option value="40000-50000">40000-50000</option>
+                <option value="50000-above">50000-above</option>
+            </select>
+            <select class="dropdown" id="accommodation-type" aria-label="Select Accommodation Type">
+                <option value="">Accommodation Type</option>
+                <option value="pg">PG</option>
+                <option value="hostel">Hostel</option>
+                <option value="room">Room</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Townhouse">Townhouse</option>
+                <option value="Villa">Villa</option>
+                <option value="Plot">Plot</option>
+                <option value="Land">Land</option>
+                <option value="Office">Office</option>
+                <option value="Building">Building</option>
+                <option value="Shop">Shopping Mall / Plaza</option>
+                <option value="Garage">Garage</option>
+            </select>
+            <input type="text" placeholder="Location or Accommodation Name" id="search-query"
+                aria-label="Search Location or Accommodation Name">
+            <button type="button" id="search-button" aria-label="Search">Search</button>
+        </div>
+    </section>
+
+    
+    <!-- Accommodation Cards Section -->
+    <div class="accommodation-container">
+        <section class="accommodation-card-section">
+
+            <h2>Find Your Perfect Accommodation</h2>
+            <p>Explore a variety of accommodation options to suit your needs and preferences, from crazy rooms to luxury
+                villas. Whether you're looking for a budget-friendly PG or a modern apartment,we have something for
+                everyone.</p>
+
+            <div class="accommodation-cards">
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 1" class="card-image"
+                        aria-label="Accommodation Image 1">
+                    <div class="card-content">
+                        <h3>PG in Jayanagar, Bangalore</h3>
+                        <p>Spacious, well-maintained PG located in the heart of Jayanagar.</p>
+                        <p>Location: Jayanagar, Bangalore</p>
+                        <p>Price: ₹10,000/month</p>
+                        <a href="pg-jayanagar-bangalore.html" class="card-button"
+                            aria-label="View Details of PG in Jayanagar, Bangalore">View
+                            Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 2" class="card-image"
+                        aria-label="Accommodation Image 2">
+                    <div class="card-content">
+                        <h3>Hostel in Indiranagar, Bangalore</h3>
+                        <p>Comfortable hostel with all amenities in the trendy Indiranagar area.</p>
+                        <p>Location: Indiranagar, Bangalore</p>
+                        <p>Price: ₹8,000/month</p>
+                        <a href="hostel-indiranagar-bangalore.html" class="card-button"
+                            aria-label="View Details of Hostel in Indiranagar, Bangalore">View
+                            Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 3" class="card-image"
+                        aria-label="Accommodation Image 3">
+                    <div class="card-content">
+                        <h3>Room in Whitefield, Bangalore</h3>
+                        <p>Cozy room in a shared apartment, perfect for tech professionals.</p>
+                        <p>Location: Whitefield, Bangalore</p>
+                        <p>Price: ₹12,000/month</p>
+                        <a href="room-whitefield-bangalore.html" class="card-button"
+                            aria-label="View Details of Room in Whitefield, Bangalore">View
+                            Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 4" class="card-image"
+                        aria-label="Accommodation Image 4">
+                    <div class="card-content">
+                        <h3>Apartment in Koramangala, Bangalore</h3>
+                        <p>Modern 2 BHK apartment in the bustling area of Koramangala.</p>
+                        <p>Location: Koramangala, Bangalore</p>
+                        <p>Price: ₹25,000/month</p>
+                        <a href="apartment-koramangala-bangalore.html" class="card-button"
+                            aria-label="View Details of Apartment in Koramangala, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 5" class="card-image"
+                        aria-label="Accommodation Image 5">
+                    <div class="card-content">
+                        <h3>Studio Apartment in HSR Layout, Bangalore</h3>
+                        <p>Compact studio apartment, perfect for singles or couples.</p>
+                        <p>Location: HSR Layout, Bangalore</p>
+                        <p>Price: ₹15,000/month</p>
+                        <a href="Studio-Apartment-HSR-Layout-Bangalore.html" class="card-button"
+                            aria-label="View Details of Studio Apartment in HSR Layout, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 6" class="card-image"
+                        aria-label="Accommodation Image 6">
+                    <div class="card-content">
+                        <h3>Luxury Villa in Whitefield, Bangalore</h3>
+                        <p>Exclusive luxury villa with a private garden and pool.</p>
+                        <p>Location: Whitefield, Bangalore</p>
+                        <p>Price: ₹1,50,000/month</p>
+                        <a href="Luxury-Villa-Whitefield-Bangalore.html" class="card-button"
+                            aria-label="View Details of Luxury Villa in Whitefield, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 7" class="card-image"
+                        aria-label="Accommodation Image 7">
+                    <div class="card-content">
+                        <h3>Co-Living Space in Bellandur, Bangalore</h3>
+                        <p>Modern co-living space with shared amenities in a vibrant community.</p>
+                        <p>Location: Bellandur, Bangalore</p>
+                        <p>Price: ₹18,000/month</p>
+                        <a href="Co-Living-Space-Bellandur-Bangalore.html" class="card-button"
+                            aria-label="View Details of Co-Living Space in Bellandur, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 8" class="card-image"
+                        aria-label="Accommodation Image 8">
+                    <div class="card-content">
+                        <h3>1 BHK Apartment in Marathahalli, Bangalore</h3>
+                        <p>Well-connected 1 BHK apartment in the bustling Marathahalli area.</p>
+                        <p>Location: Marathahalli, Bangalore</p>
+                        <p>Price: ₹20,000/month</p>
+                        <a href="1-BHK-Apartment-Marathahalli-Bangalore.html" class="card-button"
+                            aria-label="View Details of 1 BHK Apartment in Marathahalli, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 9" class="card-image"
+                        aria-label="Accommodation Image 9">
+                    <div class="card-content">
+                        <h3>Serviced Apartment in MG Road, Bangalore</h3>
+                        <p>Fully-furnished serviced apartment with daily housekeeping services.</p>
+                        <p>Location: MG Road, Bangalore</p>
+                        <p>Price: ₹40,000/month</p>
+                        <a href="Serviced-Apartment-MG-Road-Bangalore.html" class="card-button"
+                            aria-label="View Details of Serviced Apartment in MG Road, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 10" class="card-image"
+                        aria-label="Accommodation Image 10">
+                    <div class="card-content">
+                        <h3>2 BHK Apartment in Electronic City, Bangalore</h3>
+                        <p>Spacious 2 BHK apartment close to IT hubs in Electronic City.</p>
+                        <p><strong>Location:</strong> Electronic City, Bangalore</p>
+                        <p><strong>Price:</strong> ₹22,000/month</p>
+                        <a href="2-BHK-Apartment-Electronic-City-Bangalore.html" class="card-button"
+                            aria-label="View Details of 2 BHK Apartment in Electronic City, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 11" class="card-image"
+                        aria-label="Accommodation Image 11">
+                    <div class="card-content">
+                        <h3>3 BHK Apartment in Yelahanka, Bangalore</h3>
+                        <p>Modern 3 BHK apartment with easy access to the airport and city center.</p>
+                        <p><strong>Location:</strong> Yelahanka, Bangalore</p>
+                        <p><strong>Price:</strong> ₹35,000/month</p>
+                        <a href="3-BHK-Apartment-Yelahanka-Bangalore.html" class="card-button"
+                            aria-label="View Details of 3 BHK Apartment in Yelahanka, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 12" class="card-image"
+                        aria-label="Accommodation Image 12">
+                    <div class="card-content">
+                        <h3>Shared Room in BTM Layout, Bangalore</h3>
+                        <p>Affordable shared room in a vibrant area, ideal for students.</p>
+                        <p><strong>Location:</strong> BTM Layout, Bangalore</p>
+                        <p><strong>Price:</strong> ₹7,000/month</p>
+                        <a href="Shared-Room-BTM-Layout-Bangalore.html" class="card-button"
+                            aria-label="View Details of Shared Room in BTM Layout, Bangalore">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 13" class="card-image"
+                        aria-label="Accommodation Image 13">
+                    <div class="card-content">
+                        <h3>Private Room in Hennur, Bangalore</h3>
+                        <p>Comfortable private room in a peaceful neighborhood, perfect for students.</p>
+                        <p><strong>Location:</strong> Hennur, Bangalore</p>
+                        <p><strong>Price:</strong> ₹9,000/month</p>
+                        <a href="Private-Room-Hennur-Bangalore.html" class="card-button"
+                            aria-label="View Details of Private Room in Hennur, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 14" class="card-image"
+                        aria-label="Accommodation Image 14">
+                    <div class="card-content">
+                        <h3>2 BHK Flat in Sarjapur Road, Bangalore</h3>
+                        <p>Spacious 2 BHK flat with modern amenities near tech parks.</p>
+                        <p><strong>Location:</strong> Sarjapur Road, Bangalore</p>
+                        <p><strong>Price:</strong> ₹30,000/month</p>
+                        <a href="2-BHK-Flat-Sarjapur-Road-Bangalore.html" class="card-button"
+                            aria-label="View Details of 2 BHK Flat in Sarjapur Road, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 15" class="card-image"
+                        aria-label="Accommodation Image 15">
+                    <div class="card-content">
+                        <h3>Luxury Penthouse in Richmond Town, Bangalore</h3>
+                        <p>Elegant penthouse with a panoramic view of the city skyline.</p>
+                        <p><strong>Location:</strong> Richmond Town, Bangalore</p>
+                        <p><strong>Price:</strong> ₹1,20,000/month</p>
+                        <a href="Luxury-Penthouse-Richmond-Town-Bangalore.html" class="card-button"
+                            aria-label="View Details of Luxury Penthouse in Richmond Town, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 16" class="card-image"
+                        aria-label="Accommodation Image 16">
+                    <div class="card-content">
+                        <h3>Studio Apartment in Hebbal, Bangalore</h3>
+                        <p>Cozy studio apartment with easy access to Manyata Tech Park.</p>
+                        <p><strong>Location:</strong> Hebbal, Bangalore</p>
+                        <p><strong>Price:</strong> ₹14,000/month</p>
+                        <a href="Studio-Apartment-Hebbal-Bangalore.html" class="card-button"
+                            aria-label="View Details of Studio Apartment in Hebbal, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 17" class="card-image"
+                        aria-label="Accommodation Image 17">
+                    <div class="card-content">
+                        <h3>Shared Apartment in Bannerghatta Road, Bangalore</h3>
+                        <p>Shared 3 BHK apartment close to the bustling Bannerghatta Road.</p>
+                        <p><strong>Location:</strong> Bannerghatta Road, Bangalore</p>
+                        <p><strong>Price:</strong> ₹18,000/month</p>
+                        <a href="Shared-Apartment-Bannerghatta-Road-Bangalore.html" class="card-button"
+                            aria-label="View Details of Shared Apartment in Bannerghatta Road, Bangalore">View
+                            Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 18" class="card-image"
+                        aria-label="Accommodation Image 18">
+                    <div class="card-content">
+                        <h3>3 BHK Villa in HSR Layout, Bangalore</h3>
+                        <p>Luxurious 3 BHK villa with a private garden and garage.</p>
+                        <p><strong>Location:</strong> HSR Layout, Bangalore</p>
+                        <p><strong>Price:</strong> ₹55,000/month</p>
+                        <a href="3-BHK-Villa-HSR-Layout-Bangalore.html" class="card-button"
+                            aria-label="View Details of 3 BHK Villa in HSR Layout, Bangalore">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 19" class="card-image"
+                        aria-label="Accommodation Image 19">
+                    <div class="card-content">
+                        <h3>Serviced Studio in Indiranagar, Bangalore</h3>
+                        <p>Fully-furnished studio with housekeeping and modern amenities.</p>
+                        <p><strong>Location:</strong> Indiranagar, Bangalore</p>
+                        <p><strong>Price:</strong> ₹25,000/month</p>
+                        <a href="Serviced-Studio-Indiranagar-Bangalore.html" class="card-button"
+                            aria-label="View Details of Serviced Studio in Indiranagar, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 20" class="card-image"
+                        aria-label="Accommodation Image 20">
+                    <div class="card-content">
+                        <h3>4 BHK Villa in Whitefield, Bangalore</h3>
+                        <p>Spacious 4 BHK villa with private pool and garden, ideal for families.</p>
+                        <p><strong>Location:</strong> Whitefield, Bangalore</p>
+                        <p><strong>Price:</strong> ₹85,000/month</p>
+                        <a href="4-BHK-Villa-Whitefield-Bangalore.html" class="card-button"
+                            aria-label="View Details of 4 BHK Villa in Whitefield, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Utils/AdobeStock_568107719_Preview.jpeg" alt="Accommodation Image 21" class="card-image"
+                        aria-label="Accommodation Image 21">
+                    <div class="card-content">
+                        <h3>Shared PG in Malleswaram, Bangalore</h3>
+                        <p>Affordable shared PG in a well-connected area, perfect for students and professionals.</p>
+                        <p><strong>Location:</strong> Malleswaram, Bangalore</p>
+                        <p><strong>Price:</strong> ₹7,500/month</p>
+                        <a href="Shared-PG-Malleswaram-Bangalore.html" class="card-button"
+                            aria-label="View Details of Shared PG in Malleswaram, Bangalore">View Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>At GetYourStay, we strive to make your search for the perfect home as easy and hassle-free as
+                    possible.
+                    Our mission is to connect you with the best accommodation options without the need for a brokerage.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Accommodation</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@GetYourStay.com">info@GetYourStay.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon" aria-label="Facebook"><img src="/Utils/facebook-icon.png"
+                        alt="Facebook"></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><img src="/Utils/twitter-icon.jpeg"
+                        alt="Twitter"></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><img src="/Utils/instagram-icon.jpeg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GetYourStay. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

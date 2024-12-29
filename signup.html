@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | GetYourStay</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-card">
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <label for="first-name">Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a Password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Re-enter your Password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone Number">
+                </div>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="button" class="submit-btn" onclick="redirectToIndex()">Sign Up</button>
+            </form>
+        </div>
+        <div class="image-section">
+            
+        </div>
+    </div>
+    
+
+    <script>
+        function redirectToIndex() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <script src="link.js"></script>
+</body>
+
+</html>
